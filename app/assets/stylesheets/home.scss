@@ -1,3 +1,128 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$primary-color: #18bffc;
+
+.container {
+  margin-top: 30px !important;
+  .home {
+    font-family: futura;
+    h1,
+    h2 {
+      font-weight: bold !important;
+    }
+    h1,
+    span {
+      color: $primary-color;
+    }
+    ul.contact {
+      text-align: left;
+      li {
+        margin: 15px 20px;
+        font-size: 20px;
+      }
+    }
+    .contact {
+      font-size: 33px;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0px 30px 0px;
+      span.black {
+        color: black;
+      }
+    }
+    h1{
+      font-size: 50px;
+      margin: 0px 50px;
+    }
+    h2.subtitle {
+      margin-right:50px;
+      text-align: right;
+    }
+    .lists {
+      background-color: $primary-color;
+      display: flex;
+      margin-top: 100px;
+      ul {
+        list-style: none;
+      }
+
+      ul.revolution li::before {
+        content: "\2022";
+        font-size: 25px;
+
+        color: $primary-color;
+      }
+      ul.contact li::before {
+        content: "\2022";
+        color: black;
+        font-size: 25px;
+      }
+      .shadow{
+        background-color: black;
+        position: absolute;
+        height: 360px;
+        width: 480px;
+        z-index: -1;
+        right: -35px;
+        bottom: -35px;
+      }
+      .li {
+        margin: 15px 0px;
+        text-align: left;
+        display: inline-block;
+        h3,
+        ul {
+          color: white;
+        }
+        &.revolution {
+          background-color: black;
+          position: absolute;
+          right: 40px;
+          width: 500px;
+          height: 440px;
+          bottom: 25px;
+          li {
+            margin: 15px 20px;
+            font-size: 17px;
+            font-weight: bold;
+          }
+          h3 {
+            font-size: 33px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0px 30px 0px;
+          }
+        }
+      }
+    }
+    .diference-section{
+      margin-top: 50px;
+      height: 500px;  
+      .diference{
+        margin: 50px 0px 70px 0px;
+      }
+      img.icon{
+        margin-bottom: 30px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70px;
+      }
+      h4{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .btn{
+        background-color: $primary-color;
+        color: white;
+        font-weight: bold;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 200px;
+        height: 44px;
+        border-radius: 14px;
+        padding-top: 8px;
+        margin-top: 70px;
+      }
+    }
+  }
+}
