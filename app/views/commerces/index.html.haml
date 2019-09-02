@@ -1,0 +1,35 @@
+%h1 Listing commerces
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Website
+      %th Category
+      %th Name
+      %th Last name
+      %th Position
+      %th Phone
+      %th Email
+      %th
+      %th
+      %th
+
+  %tbody
+    - @commerces.each do |commerce|
+      %tr
+        %td= commerce.name
+        %td= commerce.website
+        %td= commerce.category
+        %td= commerce.name
+        %td= commerce.last_name
+        %td= commerce.position
+        %td= commerce.phone
+        %td= commerce.email
+        %td= link_to 'Show', commerce
+        %td= link_to 'Edit', edit_commerce_path(commerce)
+        %td= link_to 'Destroy', commerce, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Commerce', new_commerce_path

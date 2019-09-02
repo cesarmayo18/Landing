@@ -10,6 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_09_02_003355) do
+
+  create_table "commerces", force: :cascade do |t|
+    t.string "commerce_name", null: false
+    t.string "website", null: false
+    t.string "category"
+    t.string "name", null: false
+    t.string "last_name", null: false
+    t.string "position"
+    t.string "phone", null: false
+    t.string "email", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
