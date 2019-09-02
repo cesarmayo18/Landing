@@ -1,5 +1,9 @@
 
 .commerce-form
+  %h2.title-form
+    Queremos ayudarte a
+    = succeed " más" do
+      %span vender
   = form_for @commerce do |f|
     - if @commerce.errors.any?
       #error_explanation
@@ -8,28 +12,16 @@
             %li= message
 
     .field
-      = f.label :commerce_name
+      = f.label :Nombre_del_comercio
       = f.text_field :commerce_name
     .field
-      = f.label :website
+      = f.label :Sitio_web
       = f.text_field :website
     .field
-      = f.label :category
-      = f.text_field :category
-    .field
-      = f.label :name
+      = f.label :Nombre_de_contacto
       = f.text_field :name
     .field
-      = f.label :last_name
-      = f.text_field :last_name
-    .field
-      = f.label :position
-      = f.text_field :position
-    .field
-      = f.label :phone
-      = f.text_field :phone
-    .field
-      = f.label :email
+      = f.label :Correo
       = f.text_field :email
     .actions
-      = f.submit 'Save', class:'btn'
+      = f.submit 'Enviar', class:'btn'

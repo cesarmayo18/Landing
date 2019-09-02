@@ -5,12 +5,12 @@
       %h2.subtitle
         ¡ Bienvenidos a
         = succeed " !" do
-          %span Fize
+          %span Fize 
     .buttons-section
       %h2.i-am
         Soy:
       .buttons
-        =link_to 'Comercio', '/welcome' , class:'btn'
+        =link_to 'Comercio', new_commerce_path , class:'btn'
         =link_to 'Persona', '/welcome' , class:'btn'
       %h5.i-am Impulsado por:
       -# =image_tag 'continuum.jpeg'

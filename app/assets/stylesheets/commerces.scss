@@ -1,33 +1,76 @@
 $primary-color: #18bffc;
-
+.container.commerce{
+  height: 100% !important;
+  @media screen and (max-width: 991px) and (min-width: 50px){
+    margin:0px !important;
+    position: absolute !important;
+    top: 0px !important;
+  }
+}
 .commerce-form{
+  width: 60%;
+  display: block;
+  margin: 0px auto;
+  padding: 10px 30px;
+  background-color: #ddd;
+  @media screen and (max-width: 991px) and (min-width: 50px){
+    width: 100%;
+    padding: 0px;
+    position: absolute !important;
+    top: 0px !important;
+    min-height: 100%;
+    height: min-content;
+  }
+  .title-form{
+    font-weight: bold;
+    text-align: center;
+    margin: 27px 70px;
+    span{
+      color: $primary-color;
+    }
+    @media screen and (max-width: 991px) and (min-width: 50px){
+      margin: 60px 20px;
+    }
+  }
+  h4{
+    margin: 25px 20% !important;
+    text-align: unset !important;
+  }
   .new_commerce{
     margin: 15px;
   }
   label{
+    display: block;
     font-weight: bold;
     font-family: futura;
     margin-bottom: 0px !important;
-    margin-left: 15px;
+    margin-left: 18%;
     height: 35px;
+    @media screen and (max-width: 991px) and (min-width: 50px){
+      margin-left: 10%;
+    }
   }
   input{
+    margin: 0px auto !important;
+    display: block;
     border: solid 2px $primary-color;
     padding-left: 10px;
-    border-radius: 30px;
-    width: 90%;
+    border-radius: 14px;
+    width: 70%;
+    height: 35px;
     margin: 0px 20px;
+    @media screen and (max-width: 991px) and (min-width: 50px){
+      width: 85%;
+    }
   }
   .btn{
     background-color: $primary-color;
     color: white;
     font-weight: bold;
-    margin-right: auto;
-    margin-left: auto;
     display: block;
-    width: 100px;
     height: 40px;
     border-radius: 14px;
-    margin-top: 20px;
+    margin-top: 40px !important;
+    margin-bottom: 20px;
   }
 }
