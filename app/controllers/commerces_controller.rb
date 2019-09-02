@@ -69,6 +69,6 @@ class CommercesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def commerce_params
-      params.require(:commerce).permit(:name, :website, :category, :name, :last_name, :position, :phone, :email)
+      params.require(:commerce).permit(:commerce_name, :website, :category, :name, :last_name, :position, :phone, :email)
     end
 end

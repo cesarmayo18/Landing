@@ -1,3 +1,32 @@
-// Place all the styles related to the Commerces controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$primary-color: #18bffc;
+
+.commerce-form{
+  .new_commerce{
+    margin: 15px;
+  }
+  label{
+    font-weight: bold;
+    font-family: futura;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    height: 35px;
+  }
+  input{
+    border: solid 2px $primary-color;
+    border-radius: 30px;
+    width: 90%;
+    margin: 0px 20px;
+  }
+  .btn{
+    background-color: $primary-color;
+    color: white;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 14px;
+    margin-top: 20px;
+  }
+}

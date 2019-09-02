@@ -1,34 +1,35 @@
-= form_for @commerce do |f|
-  - if @commerce.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@commerce.errors.count, "error")} prohibited this commerce from being saved:"
-      %ul
-        - @commerce.errors.full_messages.each do |message|
-          %li= message
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :website
-    = f.text_field :website
-  .field
-    = f.label :category
-    = f.text_field :category
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :last_name
-    = f.text_field :last_name
-  .field
-    = f.label :position
-    = f.text_field :position
-  .field
-    = f.label :phone
-    = f.text_field :phone
-  .field
-    = f.label :email
-    = f.text_field :email
-  .actions
-    = f.submit 'Save'
+.commerce-form
+  = form_for @commerce do |f|
+    - if @commerce.errors.any?
+      #error_explanation
+        %ul
+          - @commerce.errors.full_messages.each do |message|
+            %li= message
+
+    .field
+      = f.label :commerce_name
+      = f.text_field :commerce_name
+    .field
+      = f.label :website
+      = f.text_field :website
+    .field
+      = f.label :category
+      = f.text_field :category
+    .field
+      = f.label :name
+      = f.text_field :name
+    .field
+      = f.label :last_name
+      = f.text_field :last_name
+    .field
+      = f.label :position
+      = f.text_field :position
+    .field
+      = f.label :phone
+      = f.text_field :phone
+    .field
+      = f.label :email
+      = f.text_field :email
+    .actions
+      = f.submit 'Save', class:'btn'
