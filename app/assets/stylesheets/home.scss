@@ -2,8 +2,14 @@ $primary-color: #18bffc;
 
 .container {
   margin-top: 30px !important;
+  padding: 0px !important;
+  .row{
+    width: 100% !important;
+    margin: 0px !important;
+  }
   .home {
     font-family: futura;
+    margin: 0px;
     h1,
     h2 {
       font-weight: bold !important;
@@ -17,6 +23,9 @@ $primary-color: #18bffc;
       li {
         margin: 15px 20px;
         font-size: 20px;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+          font-size: 17px;
+        }
       }
     }
     .contact {
@@ -24,24 +33,56 @@ $primary-color: #18bffc;
       font-weight: bold;
       text-align: center;
       margin: 20px 0px 30px 0px;
+      @media screen and (max-width: 991px) and (min-width: 50px){
+        font-size: 20px;
+        p{
+          display: inline;
+        }
+      }
       span.black {
         color: black;
       }
     }
     h1{
+      font-weight: bold;
       font-size: 50px;
       margin: 0px 50px;
+      @media screen and (max-width: 991px) and (min-width: 50px){
+        font-size: 35px;
+        margin: 0px;
+       }
     }
     h2.subtitle {
       margin-right:50px;
       text-align: right;
+      font-size: 40px;
+      @media screen and (max-width: 991px) and (min-width: 50px){
+        text-align: center;
+        margin: 20px;
+        font-size: 23px;
+       }
+    }
+    .audience{
+      background-color: $primary-color;
+      margin-left: 30px !important;
+      @media screen and (max-width: 991px) and (min-width: 50px){
+       margin: 0px !important;
+      }
     }
     .lists {
       background-color: $primary-color;
       display: flex;
       margin-top: 100px;
+      @media screen and (max-width: 991px) and (min-width: 50px){
+        background-color: transparent;
+        margin-top: 0px;
+        width: 100%;;
+      }
       ul {
         list-style: none;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+          padding: 0px;
+        }
       }
 
       ul.revolution li::before {
@@ -50,7 +91,7 @@ $primary-color: #18bffc;
 
         color: $primary-color;
       }
-      ul.contact li::before {
+      ul.contact.desktop li::before {
         content: "\2022";
         color: black;
         font-size: 25px;
@@ -63,11 +104,17 @@ $primary-color: #18bffc;
         z-index: -1;
         right: -35px;
         bottom: -35px;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+          display: none;
+        }
       }
       .li {
         margin: 15px 0px;
         text-align: left;
         display: inline-block;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+          margin: 10px 2px;
+        }
         h3,
         ul {
           color: white;
@@ -79,16 +126,32 @@ $primary-color: #18bffc;
           width: 500px;
           height: 440px;
           bottom: 25px;
+          @media screen and (max-width: 991px) and (min-width: 50px){
+            position: relative;
+            right: 0px;
+            height: 460px;
+            bottom: 0px;
+          }
           li {
             margin: 15px 20px;
             font-size: 17px;
             font-weight: bold;
+            @media screen and (max-width: 991px) and (min-width: 50px){
+              margin: 10px 20px;
+            }
+            p{
+              display: inline;
+              margin-left: 7px;
+            }
           }
           h3 {
             font-size: 33px;
             font-weight: bold;
             text-align: center;
             margin: 30px 0px 30px 0px;
+            @media screen and (max-width: 991px) and (min-width: 50px){
+              font-size: 27px;
+            }
           }
         }
       }
@@ -96,8 +159,19 @@ $primary-color: #18bffc;
     .diference-section{
       margin-top: 50px;
       height: 500px;  
+      .col-12{
+        @media screen and (max-width: 991px) and (min-width: 50px){
+          margin: 30px 0px;
+        }
+      }
       .diference{
+        font-size: 40px;
         margin: 50px 0px 70px 0px;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+          text-align: center;
+          margin: 0px 0px 22px 0px;
+          font-size: 23px;
+        }
       }
       img.icon{
         margin-bottom: 30px;
@@ -105,24 +179,35 @@ $primary-color: #18bffc;
         margin-right: auto;
         margin-left: auto;
         width: 70px;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+          width: 50px;
+          margin-bottom: 0px;
+        }
       }
       h4{
         font-size: 18px;
         font-weight: bold;
+        @media screen and (max-width: 991px) and (min-width: 50px){
+          font-size: 14px;
+        }
       }
-      .btn{
-        background-color: $primary-color;
-        color: white;
-        font-weight: bold;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-        width: 200px;
-        height: 44px;
-        border-radius: 14px;
-        padding-top: 8px;
-        margin-top: 70px;
-      }
+    }
+  }
+  .btn{
+    background-color: $primary-color;
+    color: white;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 200px;
+    height: 44px;
+    border-radius: 14px;
+    padding-top: 8px;
+    margin-top: 70px;
+    @media screen and (max-width: 991px) and (min-width: 50px){
+      margin-bottom: 30px;
+      margin-top: 30px;
     }
   }
 }

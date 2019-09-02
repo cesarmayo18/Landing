@@ -5,48 +5,85 @@
       %h2.subtitle
         Llega a tu 
         = succeed " en un click" do
-          %span audiencia...
+          %span audiencia
     .col-12.lists
-      .col-6.li
-        %h3.contact
+      .row
+        .d-none.col-lg-6.d-lg-block.li.audience
+          %h3.contact
+            Conectmos a las marcas con la
+            = succeed " indicada" do
+              %span.black audiencia
+          %ul.contact.desktop
+            %li Identificamos de primera fuente el perfil de tu cliente
+            %li Recomendamos tu productos o servicios
+            %li Creamos una experiencia de compra irresistible
+        .col-12.col-lg-6.li.revolution
+          %h3 
+            ¡Vive la 
+            %span 
+              revolución!
+          %ul.revolution
+            %li
+              %p
+                Disminuye el costo de adquisición
+            %li
+              %p
+                Diferenciate de tu competencia
+            %li
+              %p
+                Aumenta tus ventas
+            %li
+              %p
+                Marketing focalizado
+            %li
+              %p
+                Sin cobros fijos
+            %li
+              %p
+                Sin planes ni suscripciones
+        =link_to '¡Quiero saber más!', '/' , class:'btn d-lg-none'
+        %h3.contact.d-lg-none
           Conectmos a las marcas con la
           = succeed " indicada" do
             %span.black audiencia
-        %ul.contact
-          %li Identificamos de primera fuente el perfil de tu cliente
-          %li Recomendamos tu productos o servicios
-          %li Creamos una experiencia de compra irresistible
-      .col-6.li.revolution
-        %h3 
-          ¡Vive la 
-          %span 
-            revolución!
-        %ul.revolution
-          %li Disminuye el costo de adquisición
-          %li Diferenciate de tu competencia
-          %li Aumenta tus ventas
-          %li Marketing focalizado
-          %li Sin cobros fijos
-          %li Sin planes ni suscripciones
-      .shadow
+        .d-block.col-lg-6.d-lg-none.li.audience
+          %ul.contact
+            %li 
+              %p Identificamos de primera fuente el perfil de tu cliente
+            %li 
+              %p Recomendamos tu productos o servicios
+            %li 
+              %p Creamos una experiencia de compra irresistible
+        .shadow
     .col-12.diference-section
       %h2.diference
         Marca la
         %span diferencia
       .row
-        .col-4
-          =image_tag 'megaphone.png', class:'icon'
-          %h4 
-            Combina tus estrategis de marketing con Fize y prepárate
-            para crecer tu negocio.
+        .col-12.col-lg-4
+          .row
+            .col-3.col-lg-12
+              =image_tag 'megaphone.png', class:'icon'
+            .col-9.col-lg-12
+              %h4 
+                Combina tus estrategis de marketing con Fize y prepárate
+                para crecer tu negocio.
 
-        .col-4
-          =image_tag 'line-chart.png', class:'icon'
-          %h4 
-            Llega a tu público ideal a traves de nuestro modelo colaborativo
-            y amenta tus ventas.
-        .col-4
-          =image_tag 'rotate-option.png', class:'icon'
-          %h4 
-            Dale un giro a tu negocio, estamos contigo para pasar al siguiente nivel.
+        .col-12.col-lg-4
+          .row
+            .d-none.col-3.col-lg-12.d-lg-block
+              =image_tag 'line-chart.png', class:'icon'
+            .col-9.col-lg-12
+              %h4 
+                Llega a tu público ideal a traves de nuestro modelo colaborativo
+                y amenta tus ventas.
+            .col-3.col-lg-12.d-lg-none
+              =image_tag 'line-chart.png', class:'icon'
+        .col-12.col-lg-4
+          .row
+            .col-3.col-lg-12
+              =image_tag 'rotate-option.png', class:'icon'
+            .col-9.col-lg-12
+              %h4 
+                Dale un giro a tu negocio, estamos contigo para pasar al siguiente nivel.
       =link_to '¡Quiero saber más!', '/' , class:'btn'
