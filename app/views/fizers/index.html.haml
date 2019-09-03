@@ -1,0 +1,27 @@
+%h1 Listing fizers
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Gender
+      %th Mail
+      %th Phone
+      %th
+      %th
+      %th
+
+  %tbody
+    - @fizers.each do |fizer|
+      %tr
+        %td= fizer.name
+        %td= fizer.gender
+        %td= fizer.mail
+        %td= fizer.phone
+        %td= link_to 'Show', fizer
+        %td= link_to 'Edit', edit_fizer_path(fizer)
+        %td= link_to 'Destroy', fizer, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Fizer', new_fizer_path

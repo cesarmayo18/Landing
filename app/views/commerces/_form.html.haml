@@ -13,15 +13,15 @@
 
     .field
       = f.label :Nombre_del_comercio
-      = f.text_field :commerce_name
+      = f.text_field :commerce_name, required: true
     .field
       = f.label :Sitio_web
-      = f.text_field :website
+      = f.text_field :website, required: true
     .field
-      = f.label :Nombre_de_contacto
+      = f.label :Nombre_de_contacto, required: true
       = f.text_field :name
     .field
       = f.label :Correo
-      = f.text_field :email
+      = f.text_field :email, required: true
     .actions
       = f.submit 'Enviar', class:'btn'

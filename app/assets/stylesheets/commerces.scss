@@ -11,8 +11,22 @@ $primary-color: #18bffc;
   width: 60%;
   display: block;
   margin: 0px auto;
-  padding: 10px 30px;
+  padding: 30px;
   background-color: #ddd;
+  &.after-register{
+    margin-top: 80px;
+    .title-form{
+      margin-top: 0px;
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 20px;
+    }
+    b{
+      padding-left: 100px;
+      font-weight: bold; 
+    }
+  }
   @media screen and (max-width: 991px) and (min-width: 50px){
     width: 100%;
     padding: 0px;

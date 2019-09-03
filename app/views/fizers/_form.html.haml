@@ -1,0 +1,23 @@
+.commerce-form
+  %h2.title-form
+    ¡Estamos contigo para que cumplas tus objetivos!
+  = form_for @fizer do |f|
+    - if @fizer.errors.any?
+      #error_explanation
+        %ul
+          - @fizer.errors.full_messages.each do |message|
+            %li= message
+    .field
+      = f.label :Nombre 
+      = f.text_field :name, required: true
+    .field
+      = f.label :Sexo
+      = f.text_field :gender, required: true
+    .field
+      = f.label :Correo
+      = f.text_field :mail, required: true
+    .field
+      = f.label :Celular
+      = f.text_field :phone, required: true
+    .actions
+      = f.submit 'Save', class:'btn'

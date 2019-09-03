@@ -1,0 +1,2 @@
+class Fizer < ApplicationRecord
+end

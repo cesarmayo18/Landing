@@ -1,0 +1,24 @@
+.container 
+  .row.welcome
+    .col-12
+      %h1 Fize
+      %h2.subtitle
+        ¡ Gracias por registrate en
+        = succeed " !" do
+          %span Fize 
+    .commerce-form.after-register
+      %h2.title-form
+        Pronto nos comunicaremos contigo via mail
+      %p
+        %b Nombre:
+        = @fizer.name
+      %p
+        %b Sexo:
+        = @fizer.gender
+      %p
+        %b Correo:
+        = @fizer.mail
+      %p
+        %b Celular:
+        = @fizer.phone
+
