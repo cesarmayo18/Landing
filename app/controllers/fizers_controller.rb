@@ -28,6 +28,7 @@ class FizersController < ApplicationController
 
     respond_to do |format|
       if @fizer.save
+        UserNotifierMailer.send_signup_email(@fizer).deliver
         format.html { redirect_to @fizer, notice: 'Fizer was successfully created.' }
         format.json { render :show, status: :created, location: @fizer }
       else
