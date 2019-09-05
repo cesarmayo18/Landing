@@ -1,0 +1,23 @@
+.container
+  .row.welcome.fizer
+    .col-12
+      %h1 Fize
+      %h2.subtitle
+        ¡ Gana más de 
+        = succeed " mensuales !" do
+          %span 30.000 
+    .col-12
+      %ul.contact.welcome-fizers
+        %li
+          %p Desde tu celular
+        %li
+          %p
+            Fácil y rápido 
+    .col-12.gift
+      %h2
+        ¡ 10.000 de regalo ! 
+      %h2.subtitle
+        ¡A los primeros
+        = succeed " en registrarse" do
+          %span 10.000 
+    =link_to '¡Quiero saber más!', "/fizers/new" , class:'btn fizer'

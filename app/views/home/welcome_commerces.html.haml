@@ -13,7 +13,7 @@
             Conectmos a las marcas con la
             = succeed " indicada" do
               %span.black audiencia
-          %ul.contact.desktop
+          %ul.contact.desktop.home
             %li
               %p Identificamos de primera fuente el perfil de tu cliente
             %li
@@ -44,7 +44,7 @@
             %li
               %p
                 Sin planes ni suscripciones
-        =link_to '¡Quiero saber más!', '/welcome' , class:'btn d-lg-none'
+        =link_to '¡Quiero saber más!', "/commerces/new" , class:'btn d-lg-none'
         %h3.contact.d-lg-none
           Conectmos a las marcas con la
           = succeed " indicada" do
@@ -89,4 +89,4 @@
             .col-9.col-lg-12
               %h4 
                 Dale un giro a tu negocio, estamos contigo para pasar al siguiente nivel.
-      =link_to '¡Quiero saber más!', "/#{@user}/new" , class:'btn'
+      =link_to '¡Quiero saber más!', "/commerces/new" , class:'btn'

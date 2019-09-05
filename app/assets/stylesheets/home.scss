@@ -94,7 +94,7 @@ $primary-color: #18bffc;
 
         color: $primary-color;
       }
-      ul.contact.desktop li::before {
+      ul.contact.desktop.home li::before {
         content: "\2022";
         color: black;
         font-size: 25px;

@@ -1,3 +1,59 @@
-// Place all the styles related to the Fizers controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$primary-color: #18bffc;
+
+ul.welcome-fizers li::before {
+  content: "\2022";
+  color: $primary-color;
+  font-size: 25px;
+}
+
+ul.welcome-fizers{
+  list-style: none;
+  margin: 75px 100px;
+  li{
+    margin: 20px 0px;
+    @media screen and (max-width: 991px) and (min-width: 50px){
+      margin: 10px 0px;
+    }
+  }
+  p{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+    @media screen and (max-width: 991px) and (min-width: 50px){
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 991px) and (min-width: 50px){
+    padding: 0px;
+    margin: 20px;
+  }
+}
+.gift{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 200px;
+  padding-top: 50px;
+  h2{
+    font-size: 25px !important;
+    @media screen and (max-width: 991px) and (min-width: 50px){
+      font-size: 18px !important;
+    }
+  }
+}
+.welcome.fizer{
+  h2.subtitle{
+    @media screen and (max-width: 991px) and (min-width: 50px){
+      margin: 35px 20px 30px 20px !important;
+    }
+  }
+}
+.btn.fizer{
+  background-color: $primary-color;
+  display: block;
+  margin: 50px auto;
+  color: white !important;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
